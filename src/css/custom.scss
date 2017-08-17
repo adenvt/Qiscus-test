@@ -1,0 +1,19 @@
+@import "./variable.scss";
+@import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "~font-awesome/css/font-awesome.css";
+
+body {
+	background-color: darken(#fff, 10%);
+}
+
+.panel-inverse {
+	@include panel-variant(transparent, #fff, #222, #222);
+	box-shadow: 0 0 3px rgba(#000, .1);
+}
+
+.breadcrumb-inverse {
+	background-color: #222;
+	> li > a {
+		color: #fff;
+	}
+}
